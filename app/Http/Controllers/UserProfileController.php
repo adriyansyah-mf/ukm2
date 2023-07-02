@@ -35,7 +35,8 @@ class UserProfileController extends Controller
             'city' => $request->get('city'),
             'country' => $request->get('country'),
             'postal' => $request->get('postal'),
-            'about' => $request->get('about')
+            'about' => $request->get('about'),
+            'password' => $request->get('password')
         ]);
         return back()->with('succes', 'Profile succesfully updated');
     }
